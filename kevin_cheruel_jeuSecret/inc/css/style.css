@@ -1,0 +1,86 @@
+/*Header*/
+#logInForm{
+    height: 21px;
+    display: inline-block;
+}
+.signUp{
+    display: inline-block;
+}
+.headerBanner{
+    top : 0;
+    padding: 15px 0 15px 15px;
+    margin: 0 15px 0 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    border-bottom: 1px solid #000;
+    background-color: white;
+}
+.helloPseudo{
+    display: inline-block;
+}
+.remaining{
+    display: inline-block;
+    border:none;
+    width: 25px;
+}
+.solde{
+    display: inline-block;
+    border:none;
+    width: 52px;
+}
+.logOut{
+    display: inline-block;
+}
+
+
+/*Body*/
+body{
+    margin: 0;
+}
+
+.container{
+    position: absolute;
+    display: inline-block;
+    top:93px;
+    width: 100%;
+    height: auto;
+    background: url("256px-Th075sakuya01.png");
+}
+.case{
+    background-color: rgba(255,255,255,0.8);
+    padding: 3px;
+    display: inline-block;
+    margin: 2px;
+    border: solid 2px #000;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.case.valide{
+    background-color: rgba(155,205,155,0.8);
+}
+.case.valide:hover{
+    cursor: pointer;
+     background-color: rgba(195,245,195,1);
+}
+.case.check{
+    background-color: rgba(255,48,48,0.8);
+}
+.case.check:hover{
+    cursor: not-allowed;
+    background-color: rgba(255,88,88,1);
+}
+.case.valide .image{
+    width: 100%;
+    height: 100%;
+    background-image: url("bitcoins.png");
+}
+
+.tableau{
+    width: 1845px;
+   margin: auto;
+}
+.css{
+    display: none;
+}

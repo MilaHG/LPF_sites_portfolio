@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body, html {
+    height: 100%;
+  }
+
+  .img-1{
+    /* L'image de fond */
+    background-image: url('ciel.jpg');
+  }
+  .img-2{
+    /* L'image de fond */
+    background-image: url('pc.jpg');
+  }
+
+  .parallax {
+    /* L'image de fond */
+    /*background-image: url('ciel.jpg');*/
+
+    /* la hauteur de cette image de fond
+    A NOTER : les balises <body> et <html> ont aussi une hauteur à 100% */
+    height: 100%; 
+
+    /* les propriétés qui vont créer l'effet de parallax au scroll */
+    background-attachment: fixed; /* on 'attache' l'image par rapport à l'écran pour éviter qu'elle ne défile au scroll */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Ici on supprime l'effet parallax pour les tablettes et téléphones. 
+  Adapter la taille de l'écran (nombre de pixels de la media querie) selon la taille souhaitée
+  */
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+
+  div.scroll{
+  height:280px;
+  font-size:36px;
+    }
+    div.scroll p{
+      margin: 0;
+    }
+
+    #scroll_1{
+      background-image: url('sans-titre.png');
+    }
+    #scroll_2{
+      background-image: url('thumb-1920-515590.jpg');
+    }
+
+    #scroll_3{
+      background-image: url('Matrix-revolution.jpg');
+    }
+
+</style>
+</head>
+<body>
+
+  <div class="parallax img-1"></div>
+
+  <div class="scroll" id="scroll_1">
+    <br>
+    <p>Cette div permet de voir comment se passe le 'scroll'.</p>
+  </div>
+
+  <div class="parallax img-1"></div>
+
+  <div class="scroll" id="scroll_2">
+    <br>
+    <p>A tester : Pour supprimer l'effet parallax enlever la propriété 'background-attachment' dans le css.</p>
+  </div>
+
+  <div class="parallax img-2"></div>
+
+  <div class="scroll" id="scroll_3">
+    <br>
+    <p>Dans cet exemple on a supprimé l'effet parallax sur les écrans des téléphones (cf. les media queries).</p>
+
+  </div>
+
+  <div class="parallax img-2"></div>
+
+</body>
+</html>

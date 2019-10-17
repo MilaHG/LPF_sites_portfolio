@@ -1,0 +1,11 @@
+Ma BDD :
+    Tables :
+    Contact (5 champs) : id_contact, nom, email, telephone, message;
+    Compétence (3 champs) : id_competence, competence, logo;
+    Experience (4 champs) : id_experience, experience, date, descritption;
+    Loisirs (3 champs) : id_loisir, titre, img;
+    Realisation (4 champs) : id_realisation, titre, date, description;
+
+Objectifs :
+    Contact : Pouvoir enregistrer automatiquement les soumissions du formulaire en BDD.
+    Compétence : Pouvoir ajouter une compétence (avec son titre et son logo) de manière dynamique.

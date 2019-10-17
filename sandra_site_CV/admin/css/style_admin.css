@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document admin sandra */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  /*position: relative;
+  min-height: 100%;*/
+}
+body {
+
+ background-image: url(../img/image1.jpg);
+ background-repeat: repeat-x;
+  /* Margin bottom by footer height */
+ margin-bottom: 60px;
+}
+h3{
+  background-color: : mistyrose;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: black;
+}
